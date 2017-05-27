@@ -154,9 +154,7 @@ public class BigNumberUtility {
 		char[] numberArray = number.toCharArray();
 		
 		int i;
-		for(i = 0; numberArray[i] == '0' && i < numberArray.length; i++) {
-			;
-		}
+		for(i = 0; numberArray[i] == '0' && i < numberArray.length; i++);
 		
 		return number.substring(i);
 	}
